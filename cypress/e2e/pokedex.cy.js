@@ -6,8 +6,8 @@ describe('Pokedex', function() {
   })
   it('specific pokemon pages can be opened', function() {
     cy.visit('http://localhost:5000')
-    cy.visit('http://localhost:5000/pokemon/ivysaur')
-    cy.contains('ivysaur')
+    cy.contains('ivysaur').click()
+    cy.location('pathname').should('eq', '/pokemon/ivysaur')
     cy.contains('chlorophyll')
   })
 })
