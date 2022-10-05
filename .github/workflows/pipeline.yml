@@ -24,7 +24,7 @@ jobs:
         uses: cypress-io/github-action@v4
         with:
           build: npm run build
-          start: npm start
+          start: npm run start-prod
           wait-on: http://localhost:5000
       - name: deployment
         uses: akhileshns/heroku-deploy@v3.12.12
