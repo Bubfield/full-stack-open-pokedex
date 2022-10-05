@@ -33,4 +33,3 @@ jobs:
           heroku_app_name: "pokidexi"
           heroku_email: "bubfield405@gmail.com"
           healthcheck: "https://pokidexi.herokuapp.com/health"
-          versioncheck: "https://pokidexi.herokuapp.com/version"
