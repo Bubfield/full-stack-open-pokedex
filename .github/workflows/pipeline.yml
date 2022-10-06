@@ -50,3 +50,4 @@ jobs:
           DEFAULT_BUMP: patch
           DRY_RUN: true
           COMMIT_MESSAGES: ${{ toJson(github.event.commits.*.message) }}
+          run: echo "$COMMIT_MESSAGES"
